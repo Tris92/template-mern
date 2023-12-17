@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Users</title>
+</head>
+<body>
+  <h1>Users</h1>
+  <ul>
+    <% 
+      for (const user of users) { 
+    %>
+      <li><%= user.name %> (<%= user.email %>)</li>
+    <% } %>
+  </ul>
+  <a href="/users">New User</a>
+</body>
+</html>
